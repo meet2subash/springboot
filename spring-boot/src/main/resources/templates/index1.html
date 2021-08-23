@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Simple web Development Template</title>
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		.navbar {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: sticky;
+			top: 0;
+			cursor: pointer;
+		}
+
+		.background {
+			background: black;
+			background-blend-mode: darken;
+			background-size: cover;
+		}
+
+		.nav-list {
+			width: 70%;
+			display: flex;
+			align-items: center;
+		}
+
+		.logo {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.logo img {
+			width: 150px;
+			border-radius: 50px;
+		}
+
+		.nav-list li {
+			list-style: none;
+			padding: 26px 30px;
+		}
+
+		.nav-list li a {
+			text-decoration: none;
+			color: white;
+		}
+
+		.nav-list li a:hover {
+			color: grey;
+		}
+
+		.rightnav {
+			width: 30%;
+			text-align: right;
+		}
+
+		#search {
+			padding: 5px;
+			font-size: 17px;
+			border: 2px solid grey;
+			border-radius: 9px;
+		}
+
+		.firstsection {
+			background-color: green;
+			height: 400px;
+		}
+
+		.secondsection {
+			background-color: blue;
+			height: 400px;
+		}
+
+		.box-main {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: black;
+			max-width: 80%;
+			margin: auto;
+			height: 80%;
+		}
+
+		.firsthalf {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+
+		.secondhalf {
+			width: 30%;
+		}
+
+		.secondhalf img {
+			width: 70%;
+			border: 4px solid white;
+			border-radius: 150px;
+			display: block;
+			margin: auto;
+		}
+
+		.text-big {
+			font-family: 'Piazzolla', serif;
+			font-weight: bold;
+			font-size: 35px;
+		}
+
+		.text-small {
+			font-size: 18px;
+		}
+
+		.btn {
+			padding: 8px 20px;
+			margin: 7px 0;
+			border: 2px solid white;
+			border-radius: 8px;
+			background: none;
+			color: white;
+			cursor: pointer;
+		}
+
+		.btn-sm {
+			padding: 6px 10px;
+			vertical-align: middle;
+		}
+
+		.section {
+			height: 400px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			max-width: 90%;
+			margin: auto;
+		}
+
+		.section-Left {
+			flex-direction: row-reverse;
+		}
+
+		.paras {
+			padding: 0px 65px;
+		}
+
+		.thumbnail img {
+			width: 250px;
+			border: 2px solid black;
+			border-radius: 26px;
+			margin-top: 19px;
+		}
+
+		.center {
+			text-align: center;
+		}
+
+		.text-footer {
+			text-align: center;
+			padding: 30px 0;
+			font-family: 'Ubuntu', sans-serif;
+			display: flex;
+			justify-content: center;
+			color: white;
+		}
+	</style>
+</head>
+
+<body>
+	<nav class="navbar background">
+		<ul class="nav-list">
+			<div class="logo">
+				<img src= "https://objectstorage.us-phoenix-1.oraclecloud.com/p/bOsmdWVhV3lpvLjRbpCfj574m1sR80aWEwqHLp_raVT2oX714yaJFAn71LvEn5xu/n/orasenatdpltintegration01/b/forwardair/o/logo.png">				
+			</div>
+			<li><a href="#web">EXPEDITED GROUND</a></li>
+			<li><a href="#program">DEDICATED LINEHAUL</a></li>
+			<li><a href="#course">FINAL-MILE SERVICES</a></li>
+		</ul>
+
+		<div class="rightNav">
+			<input type="text" name="search" id="search">
+			<button class="btn btn-sm">Search</button>
+		</div>
+	</nav>
+
+	<section class="firstsection">
+		<div class="box-main">
+			<div class="firstHalf">
+				<h1 class="text-big" id="web">EXPEDITED GROUND</h1>
+				<p class="text-small">
+					Forward Air supplies expedited ground transportation between our terminals located near major U.S. and Canadian airports. Placement of our stations and sort centers provide us with the ability to transport freight within our network in a more expedited fashion than traditional LTL ground transportation. This aiport-to-airport (A2A) service is provided to domestic and international airlines, freight forwarders and related logistics businesses. Our network is your network.
+				</p>
+
+
+			</div>
+		</div>
+	</section>
+
+	<section class="secondsection">
+		<div class="box-main">
+			<div class="firstHalf">
+				<h1 class="text-big" id="program">
+					DEDICATED LINEHAUL
+				</h1>
+				<p class="text-small">
+					Forward Air Truckload is the full truckload arm of our LTL division. We provide full truckload service for larger point-to-point consignments and dedicated fleet services. With Forward Air Truckload, you have the option to ship LTL, TL and/or integrate specialized cartage services.  Truckload offers a diversified portfolio of transportation services (long haul, regional and local truckload capacity) and a wide assortment of equipment that enables us to safely and quickly meet critical on-time expectations across North America.
+				</p>
+
+
+			</div>
+		</div>
+	</section>
+
+	<section class="section">
+		<div class="paras">
+			<h1 class="sectionTag text-big">FINAL-MILE SERVICES</h1>
+
+			<p class="sectionSubTag text-small">
+				Complete® Cartage extends your reach farther into areas outside of our airport locations by adding pickup/delivery to our linehaul service as a packaged arrangement. This integrated, end-to-end (or “final mile”) service offers forwarders, airlines, logistics companies and non-traditional shippers, reliable, single-source transportation to zip/postal codes and zones across North America. Use our network as your own to enhance your business scope and enlarge your customer base. Options available within our Complete® offering includes to-the-door, local zone transport, distributions, residential, and much more.
+			</p>
+
+
+		</div>
+
+		<div class="thumbnail">
+			<img src= "img.png" alt="laptop image">
+		</div>
+	</section>
+
+	<footer class="background">
+		<p class="text-footer">
+			Copyright ©-All rights are reserved
+		</p>
+
+
+	</footer>
+</body>
+
+</html>
